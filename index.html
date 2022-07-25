@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/min.css">
+    <title>Pokemons&Movies</title>
+</head>
+<body class="back">
+    
+    <header class="header">
+    </header>
+    <main>
+        <section>
+            <h2 id="need" class="text-center mt-5 text-info fs-1 fw-bold">Choose category</h2>
+                <div class="mt-5 d-flex flex-wrap justify-content-center align-items-center">
+                    <button id="movies" class="btn w-25 btn-dark" type="button">Movies</button>
+                    <button id="pokemon" class="btn w-25 btn-dark" type="button">Pokemon</button>
+                    <button id="both" class="btn w-25 btn-dark">Both</button>
+                    <button id="clear" class="btn w-25 btn-danger" type="button">Clear all</button>
+                </div>
+                <div class="d-flex text-center text-lg-start mt-5 mb-5">
+                    <h2 class="text-primary">Outcome: <span id="total">0</span></h2>
+                    <div id="logoWrapper" class="d-flex">
+                        <img class="d-none pokemonlogo w-50" src="./images/pokemon_logo.png" alt="">
+                        <img class="d-none movieslogo w-50" src="./images/pngwing.com.png" alt="">
+                    </div>
+                </div>
+                <ul id="list" class="list gap-0 gap-lg-5 d-flex row-cols-1 row-cols-lg-5 list-unstyled flex-wrap justify-content-center">
+                </ul>
+        </section>
+    </main>
+
+    <script src="./js/movies.js"></script>
+    <script src="./js/pokemon.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
